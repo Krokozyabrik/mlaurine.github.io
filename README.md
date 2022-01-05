@@ -1,2 +1,2 @@
-# vitaliycourse.github.io
+# Виталий Савин
 Мой первый сайт
