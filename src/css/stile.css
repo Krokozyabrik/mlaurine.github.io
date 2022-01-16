@@ -92,7 +92,8 @@ border-radius: 30px;}
 .titel__umeniya h3{
 	font-size: 22px;
 	padding: 90px 50px 30px 845px;
-	color: #3f495a;}
+	color: #3f495a;
+	text-transform: uppercase;}
 
 .titel__umeniya li{
 	line-height: 20px;
@@ -114,30 +115,65 @@ border-radius: 30px;}
 	height: 100%;
 	background: url(../img/foncase.jpg) no-repeat;}
 
+.titel__keyse h3 {
+	font-size: 22px;
+	padding: 90px 50px 30px 845px;
+	color: #3f495a;
+	text-transform: uppercase;}
+
 .titel__stoimost {
 	width: 100%;
 	height: 100%;}
+
+.titel__stoimost h3 {
+	font-size: 22px;
+	padding: 90px 50px 30px 830px;
+	color: #3f495a;
+	text-transform: uppercase;}
 
 .titel__statistic {
 	width: 100%;
 	height: 50%;
 	background: url(../img/fonstatistyc.jpg) no-repeat;}
 
+.titel__statistic h3{
+	font-size: 22px;
+	padding: 90px 50px 30px 830px;
+	color: #3f495a;
+	text-transform: uppercase;}
+
 .titel__otziv {
 	width: 100%;
-	height: 100%;
+	height: 70%;
 	background: url(../img/fonotzyv.jpg) no-repeat;}
+
+.titel__otziv h3{
+	font-size: 22px;
+	padding: 90px 50px 30px 830px;
+	color: #3f495a;
+	text-transform: uppercase;}
 
 footer {
 	width: 100%;
-	height: 100%;
+	height: 80%;
 	background: url(../img/foncontact.jpg);}
 
 .title__contacts {
-	color: #fff;
-}
+	color: #fff;}
+ 
+.title__contacts h3{
+	font-size: 22px;
+	padding: 90px 50px 30px 830px;
+	color: #3f495a;
+	text-transform: uppercase;
+	color: #fff;}
 
 .titel__obratnaya_svyaz{
-	color: #fff;
-}
+	color: #fff;}
 
+.titel__obratnaya_svyaz h4{
+	font-size: 22px;
+	padding: 120px 50px 30px 810px;
+	color: #3f495a;
+	text-transform: uppercase;
+	color: #fff;}
