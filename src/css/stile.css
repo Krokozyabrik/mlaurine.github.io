@@ -95,16 +95,18 @@ border-radius: 30px;}
 	color: #3f495a;
  	}
 
+.titel__umeniya li{
+	line-height: 20px;
+	float: left;
+	padding: 150px 0px 100px 280px;
+} 
+
 .titel__umeniya li h4 {
-	padding-left: 470px;
-	color: #da9944;
-	text-transform: uppercase;
-	line-height: 40px;
+	text-align: center;
+	font-size: 16px;
+	color: #da9944;}
 
-
-}
-.titel__umeniya li p {
-	padding-left: 470px;
-	color: #586170;
-
-}
+.titel__umeniya li br {
+	text-align: center;
+	font-size: 12px;
+	color: #586170;}
