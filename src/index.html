@@ -2,7 +2,7 @@
  <html>
  <head>
  	<meta charset="utf-8">
- 	<meta http-equiv="refresh" content="30">
+ 	<!--<meta http-equiv="refresh" content="30">-->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/stile.css">
  	<title>Виталий Савин вэб-разработчик</title>
@@ -14,12 +14,12 @@
         <div class="logo">Виталий Савин</div> 
              <div class="menu">
                 <ul>
-                    <li>Обо мне</li> 
-                    <li>Услуги</li> 
-                    <li>Кейсы</li>  
-                    <li>Прайс</li>  
-                    <li>Отзывы</li>  
-                    <li>Контакты</li>  
+                    <li><a href="#obomne">Обо мне</a></li>
+                    <li><a href="#uslugi">Услуги</a></li> 
+                    <li><a href="#keys">Кейсы</a></li>  
+                    <li><a href="#prays">Прайс</a></li>  
+                    <li><a href="#otziv">Отзывы</a></li>  
+                    <li><a href="#contacts">Контакты</a></li>  
                 </ul>
             </div>
         </nav>
@@ -32,6 +32,7 @@
 </div></div>
 
     <div class="titel__obomne">
+        <a name="obomne"></a>
         <h3>ОБО МНЕ</h3>
         <img src="img/my_photo.png" width="100" alt="Тут должно быть мое фото">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -44,6 +45,7 @@
     </div>
 
 <div class="titel__umeniya"><div>
+    <a name="uslugi"></a>
     <h3>ЧТО Я УМЕЮ</h3>
     <ul>
     <li><h4>Вэб-дизайн</h4><br>краткое описание</li>
@@ -54,19 +56,23 @@
 </div></div>
 
 <div class="titel__keyse"><div>
+    <a name="keys"></a>
     <h3>КЕЙСЫ</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-    <ul>
-        <li><img src="img/photoceys.png" width="1200 600" alt="Тут будет фото работы"></li>
-        <li><h4>Client: <br> название компании </h4></li>
-        <li><h5>WEBSITE: <br> ссылка на сайт</h5></li>
-        <li><input type="submit" value="visit live site"></li> <!-- подправить на рабочую кнопку -->
-        <li><h6>Название проекта <br>
-             Описание Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco .</h6></li>
-    </ul>
+    <div class="opis">
+        <img src="img/photoceys.png" width="1200 600" alt="Тут будет фото работы">
+        <div class="ss">
+        <h4>Client: <br> название компании </h4>
+        <h5>WEBSITE: <br> ссылка на сайт</h5>
+        <input class="vizit" type="submit" value="visit live site"></div> <!-- подправить на рабочую кнопку -->
+       <div class="sa">
+        <h6>Название проекта <br>
+             Описание Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco .</h6></div>
+    </div>
 </div></div>
 
 <div class="titel__stoimost"><div>
+    <a name="prays"></a>
     <h3>Расчет стоимости</h3>
     <ul>
         <li><h4>ТИП САЙТА</h4><select name="tip" id="1">
@@ -103,6 +109,7 @@
 </div></div>
 
 <div class="titel__otziv"><div>
+    <a name="otziv"></a>
         <h3>ОТЗЫВЫ</h3>
         <img src="img/otziv.jpg" width="100" alt="Тут будет фото клиента">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -116,6 +123,7 @@
 <footer>
 <!-- нижнее меню сайта  -->
     <div class="title__contacts"><div>
+        <a name="contacts"></a>
         <h3>МОИ КОНТАКТЫ</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -127,10 +135,11 @@
     </div></div>
     <div class="titel__obratnaya_svyaz"><div>
         <h4>Связатся со мной</h4>
+      <div class="svyaz1">
       <form action="#" method="get" name="svyaz" >
        <input type="text" name="Имя" placeholder="Имя">
        <input type="text" name="Email" placeholder="Email" ><br>
-       <textarea name="vvod" cols="35" rows="10" placeholder="Сообщение"></textarea>
+       <textarea name="vvod" cols="35" rows="10" placeholder="Сообщение"></textarea></div>
        <br> <button type="submit" reset="svyaz">Отправить</button>
     </div></div></form>
 </footer>
