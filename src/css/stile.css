@@ -1,346 +1,463 @@
-body {font-family: Arial, sans-serif;}
+body {
+   font-family: Arial, sans-serif;
+   width: 100%;
+   max-width: 1920px;
+}
+
 nav {
-	width: 100%;
-	height: 60px;
-	background: #344051;
-	position: fixed;}
+   width: 100%;
+   height: 60px;
+   background: #344051;
+   position: fixed;
+}
 
-.logo{
-	color: #fff;
-	font-size: 28px;
-	line-height: 60px;
-	padding-left: 388px;
-	float: left;}
-
+.logo {
+   color: #fff;
+   font-size: 28px;
+   line-height: 60px;
+   padding-left: 388px;
+   float: left;
+}
 .menu {
-	float: left;
-	padding-left: 432px;}
-
+   float: left;
+   padding-left: 432px;
+}
 .menu li {
-	float: left;
-	line-height: 60px;
-	color: #fff;
-	margin-right: 40px;
-	font-size: 16px;
-	text-transform: uppercase;}
-
-.main{
-	width: 100%;
-	height: calc(100% - 60px);
-	background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;}
-
-.title__container{
-	float: left;
-	margin: 432px 0px 0px 404px;
-	color: #2c384a;
-	text-align: center;}
-
-.title__container h1{
-	font-size: 60px;
-	font-weight: bolder;}
-
-.title__container h4{
-	margin-top: 40px;
-	font-size: 22px;
-	color: #79818d;}
-
-.title__container input{
-
-	height: 40px;
-	text-align: center;
-	border: 2px solid #6d7682;
-	background: none;
-	border-radius: 5px;
-	color: #6d7682;
-	font-size: 13px;
-	padding: 0px 16px;
-	margin: 50px 14px 0px 14px;}
-
-/*obo mne*/
-
-.titel__obomne {
-	width: 100%;
-	height: 60%;
-	background: url(../img/cherta.png) 47.5% 22%/auto 0.4% no-repeat, url(../img/fon1.jpg) center/cover no-repeat;}
-
-.titel__obomne h3 {
-	font-size: 22px;
-	padding: 5% 45%; /*110px 50px 30px 855px*/
-	color: #3f495a;}
-  
-.titel__obomne img{
-margin: 1% 45%;/*50px 859px 0px 860px*/
-border-radius: 30px;}
-   
-
-.titel__obomne p {
-	text-align: center;
-	padding: 0% 25%;/*25px 596px 0px 597px*/
-	color: #3f495a;
-	font-size: 12px;}
-
-.titel__obomne input {
-	height: 22px;
-	text-align: center;
-	border: 2px solid #6f707e;
-	background: none;
-	color: #6f707e;
-	border-radius: 5px;
-	font-size: 13px;
-	padding: 0px 16px;
-	margin: 3% 45%;}/*40px 0px 82px 845px*/
-
-
-/* Umeniya */
-
-
-.titel__umeniya {
-	width: 100%;
-	height: 50%;
-	background: url(../img/cherta2.png) 48.5% 29%/auto 1% no-repeat,url(../img/znak.png) 38.7% 44%/auto no-repeat, url(../img/raketa.png) 61% 44%/auto no-repeat,url(../img/gramafon.png) 83% 44%/auto no-repeat,url(../img/nout.png) 17% 44%/auto no-repeat, url(../img/fon2.jpg) center/cover no-repeat;}
-
-.titel__umeniya h3{
-	font-size: 22px;
-	padding: 5% 45%;
-	/*padding: 90px 50px 30px 845px;*/
-	color: #3f495a;
-	text-transform: uppercase;}
-
-.titel__umeniya li{
-	line-height: 20px;
-	float: left;
-	margin-left: 15%;
-	padding: 70px 0 0 0;
-	/*padding: 150px 0px 100px 280px;*/} 
-
-.titel__umeniya li h4 {
-	text-align: center;
-	font-size: 16px;
-	color: #da9944;}
-
-.titel__umeniya li br {
-	text-align: center;
-	font-size: 12px;
-	color: #586170;}
-
-
-/*Keys*/
-
-
-.titel__keyse {
-	width: 100%;
-	height: 100%;
-	background: url(../img/cherta.png) 46.3% 13%/auto 0.4% no-repeat, url(../img/foncase.jpg) no-repeat;}
-
-.titel__keyse h3 {
-	font-size: 22px;
-	padding: 90px 50px 30px 845px;
-	color: #3f495a;
-	text-transform: uppercase;}
-
-.titel__keyse p {
-	text-align: center;
-	font-size: 12px;
-	color: #586170;}
-
-.opis {
-	float: left;
-	height: 100px;
-	padding: 1%;
+   float: left;
+   line-height: 60px;
+   color: #fff;
+   margin-right: 40px;
+   font-size: 16px;
+   text-transform: uppercase;
 }
 
-.titel__keyse img {
-	margin:10px 0px 0px 100px ;
+.main {
+   width: 100%;
+   height: calc(100% - 60px);
+   background: url(../img/boy.png) 90% 100% / auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
+}
+.title__container {
+   float: left;
+   margin: 432px 0px 0px 404px;
+   color: #2c384a;
+   text-align: center;
+}
+.title__container h1 {
+   font-size: 60px;
+   font-weight: bolder;
+}
+.title__container h4 {
+   margin-top: 40px;
+   font-size: 22px;
+   color: #79818d;
+}
+.title__container input {
+   height: 40px;
+   text-align: center;
+   border: 2px solid #6d7682;
+   background: none;
+   border-radius: 5px;
+   color: #6d7682;
+   font-size: 13px;
+   padding: 0px 16px;
+   margin: 50px 14px 0px 14px;
 }
 
-.ss {
-	float: left;
-	padding: 1%;
+/* Titels */
+
+.titel {
+   padding: 100px 0px 20px 0px;
+   font-size: 22px;
+   color: #2c384a;
+   text-align: center;
+   font-weight: 600;
+   background: url(../img/cherta.png) 50% 100% / auto 2.5% no-repeat;
 }
 
-.ss h4 {
-	padding:5px 0px 0px 300px ;
-	font-size: 17px;
-	color: #384354;
+/* AboutMe */
+
+.AboutMe {
+   width: 100%;
+   height: 70%;
+   background: url(../img/fon1.jpg) center/cover no-repeat;
+}
+.titel__AboutMe {
+   margin: 1px 595px;
+   text-align: center;
+}
+.titel__AboutMe img {
+   margin: 60px 1px 30px 1px;
+   border-radius: 30px;
+}
+.titel__AboutMe p {
+   text-align: center;
+   padding: 1px 1px 30px 1px;
+   color: #3f495a;
+   font-size: 12px;
+}
+.titel__AboutMe input {
+   height: 22px;
+   text-align: center;
+   border: 2px solid #6f707e;
+   background: none;
+   color: #6f707e;
+   border-radius: 5px;
+   font-size: 13px;
+   padding: 0px 16px;
+   margin: 3% 41%;
 }
 
-.ss h5 {
-	padding:5px 0px 0px 300px ;
-	font-size: 17px;
-	color: #384354;
+/* WhatICanDo */
+
+.WhatICanDo {
+   width: 100%;
+   height: 50%;
+   background: url(../img/fon2.jpg) center/cover no-repeat;
+}
+.titel__WhatICanDo {
+   width: 1092px; /*фиксируем ширину обертки*/
+   margin-left: 420px;
+   height: 250px; /*Задаем высоту обертки*/
+}
+.titel__WhatICanDo div {
+   margin-top: 100px;
+   float: left; /*Задаем обтекание*/
+   line-height: 20px; /*Высота строки +  верт. центрирования текста*/
+   width: 250px; /*Фиксируем ширину блока*/
+   margin-right: 20px;
+   text-align: center; /*Центрируем текст по горизонтали*/
+}
+.titel__WhatICanDo :last-child {
+   margin-right: 0px; /*Убираем поле последнего div-а*/
+}
+.web {
+   background: url(../img/nout.png) top no-repeat;
+}
+.web h4 {
+   padding: 70px 1px 1px 1px;
+   font-size: 16px;
+   color: #da9944;
+}
+.web p {
+   font-size: 12px;
+   color: #586170;
+}
+.develop {
+   background: url(../img/znak.png) top no-repeat;
+}
+.develop h4 {
+   padding: 70px 1px 1px 1px;
+   font-size: 16px;
+   color: #da9944;
+}
+.develop p {
+   font-size: 12px;
+   color: #586170;
+}
+.seo {
+   background: url(../img/raketa.png) top no-repeat;
+}
+.seo h4 {
+   padding: 70px 1px 1px 1px;
+   font-size: 16px;
+   color: #da9944;
+}
+.seo p {
+   font-size: 12px;
+   color: #586170;
+}
+.marketing {
+   background: url(../img/gramafon.png) top no-repeat;
+}
+.marketing h4 {
+   padding: 70px 1px 1px 1px;
+   font-size: 16px;
+   color: #da9944;
+}
+.marketing p {
+   font-size: 12px;
+   color: #586170;
 }
 
+/* cases */
+
+.titel__cases {
+   width: 100%;
+   height: 100%;
+   background: url(../img/foncase.jpg) no-repeat;
+}
+.titel__cases p {
+   text-align: center;
+   padding: 20px 2px;
+   font-size: 12px;
+   color: #586170;
+}
+.cases1 {
+   margin-left: 10%;
+   margin-bottom: -5%;
+}
+.cases2 {
+   float: left;
+   padding: 1%;
+}
+.cases2 h4 {
+   padding: 5px 0px 0px 450px;
+   font-size: 17px;
+   color: #384354;
+}
+.cases2 h5 {
+   padding: 5px 0px 0px 450px;
+   font-size: 17px;
+   color: #384354;
+}
 .vizit {
-	margin: 5px 0px 0px 300px;
-	font-size: 19px;
-	color: #fff;
-	background: #63b5ae;
-	height: 40px;}
-
-.sa  {
-	margin: 1%;
-	padding: 1%;
-	font-size: 17px;
-	color: #384354;}
-
-
-/*stoimost */
-
-
-.titel__stoimost {
-	width: 100%;
-	height: 100%;
-
+   margin: 5px 0px 0px 450px;
+   padding: 10px 5px;
+   font-size: 19px;
+   color: #fff;
+   background: #63b5ae;
+   border-radius: 5px;
+   height: 40px;
+}
+.cases3 {
+   text-align: left;
+   padding: 1%;
+   font-size: 17px;
+   color: #384354;
+}
+.cases3 p {
+   text-align: left;
+   padding: 1% 25% 0.1% 0%;
+   font-size: 15px;
+   color: #384354;
 }
 
-.titel__stoimost h3 {
-	font-size: 22px;
-	padding: 90px 50px 30px 830px;
-	color: #3f495a;
-	text-transform: uppercase;
-}
+/* cost */
 
-.titel__stoimost ul {
-	font-size: 23px;
-	padding-left: 500px;
+.cost {
+   width: 100%;
+   height: 60%;
 }
-
-.titel__stoimost select {
-	font-size: 40px;
-	margin: 20px;
+.cost h3 {
+   padding: 100px 0px 20px 30px;
+   font-size: 24px;
+   color: #2c384a;
+   text-align: center;
+   font-weight: 600;
 }
-
+.cost ul {
+   font-size: 23px;
+   padding: 10px 1px 10px 530px;
+}
+.list select {
+   width: 800px;
+   border-radius: 5px;
+   text-align: left;
+   padding: 0.5%;
+   margin: 15px 1px 15px 1px;
+   background-color: #caccd18f;
+   font-size: 18px;
+}
 
 /* statystic*/
 
-
+.statistics {
+   width: 100%;
+   height: 50%;
+   background: url(../img/fonstatistyc.jpg) center/cover no-repeat;
+}
 .titel__statistic {
-	width: 100%;
-	height: 50%;
-	background: url(../img/cherta2.png) 48.5% 29%/auto 1% no-repeat, url(../img/smayl.png) 17% 44%/auto no-repeat,url(../img/scobki.png) 38% 44%/auto no-repeat, url(../img/galka.png) 58.9% 44%/auto no-repeat,url(../img/kubok.png) 80% 44%/auto no-repeat,url(../img/fonstatistyc.jpg) no-repeat;}
+   width: 1092px; /*фиксируем ширину обертки*/
+   margin-left: 420px;
+   height: 250px; /*Задаем высоту обертки*/
+}
+.titel__statistic div {
+   margin-top: 100px;
+   float: left; /*Задаем обтекание*/
+   line-height: 20px; /*Высота строки +  верт. центрирования текста*/
+   width: 250px; /*Фиксируем ширину блока*/
+   margin-right: 20px;
+   text-align: center; /*Центрируем текст по горизонтали*/
+}
+.titel__statistic :last-child {
+   margin-right: 0px; /*Убираем поле последнего div-а*/
+}
+.heppy {
+   background: url(../img/smayl.png) top no-repeat;
+}
+.heppy h4 {
+   padding: 70px 1px 1px 1px;
+   font-size: 26px;
+   color: #da9944;
+}
+.heppy p {
+   font-size: 12px;
+   color: #586170;
+}
+.work {
+   background: url(../img/scobki.png) top no-repeat;
+}
+.work h4 {
+   padding: 70px 1px 1px 1px;
+   font-size: 26px;
+   color: #da9944;
+}
+.work p {
+   font-size: 12px;
+   color: #586170;
+}
+.end {
+   background: url(../img/galka.png) top no-repeat;
+}
+.end h4 {
+   padding: 70px 1px 1px 1px;
+   font-size: 26px;
+   color: #da9944;
+}
+.end p {
+   font-size: 12px;
+   color: #586170;
+}
+.rewards {
+   background: url(../img/kubok.png) top no-repeat;
+}
+.rewards h4 {
+   padding: 70px 1px 1px 1px;
+   font-size: 26px;
+   color: #da9944;
+}
+.rewards p {
+   font-size: 12px;
+   color: #586170;
+}
 
-.titel__statistic h3{
-	font-size: 22px;
-	padding: 90px 50px 30px 830px;
-	color: #3f495a;
-	text-transform: uppercase;}
+/* reviews */
 
-.titel__statistic li{
-	line-height: 20px;
-	float: left;
-	margin-left: 15%;
-	padding: 130px 0 0 0;
-	/*padding: 150px 0px 100px 280px;*/
-} 
-
-.titel__statistic li h4 {
-	text-align: center;
-	font-size: 26px;
-	color: #323e4f;}
-
-.titel__statistic li p {
-	text-align: center;
-	font-size: 12px;
-	color: #323e4f;}
-
-
-/*otzyv*/
-
-
-.titel__otziv {
-	width: 100%;
-	height: 70%;
-	background:url(../img/cherta.png) 47.5% 18%/auto 0.4% no-repeat, url(../img/fonotzyv.jpg) no-repeat;}
-
-.titel__otziv h3{
-	font-size: 22px;
-	/*padding: 90px 50px 30px 830px;*/
-	padding: 3% 45%;
-	color: #3f495a;
-	text-transform: uppercase;}
-
-.titel__otziv img{
-	/*margin: 50px 859px 0px 840px;*/
-	margin: 3% 45%;
-	border-radius: 30px;}
-
-.titel__otziv p {
-	text-align: center;
-	/*padding: 25px 596px 0px 597px;*/
-	padding: 3% 25%;
-	color: #3f495a;
-	font-size: 12px;}
-
+.reviews {
+   width: 100%;
+   height: 70%;
+   background: url(../img/tochkaoranz.png) 48.5% 80% / auto no-repeat,
+      url(../img/tochkaser1.png) 50% 80% / auto no-repeat, url(../img/tochkaser2.png) 51.5% 80% / auto no-repeat,
+      url(../img/fon1.jpg) center/cover no-repeat;
+}
+.titel__reviews {
+   margin: 1px 595px;
+   text-align: center;
+}
+.titel__reviews img {
+   margin: 60px 1px 30px 1px;
+   border-radius: 30px;
+}
+.titel__reviews p {
+   text-align: center;
+   padding: 1px 1px 30px 1px;
+   color: #3f495a;
+   font-size: 12px;
+}
 
 /*footer*/
 
-
 footer {
-	width: 100%;
-	height: 85%;
-	background:  url(../img/cherta.png) 47.5% 13%/auto 0.4% no-repeat, url(../img/geo.png) 15.5% 25%/auto no-repeat,url(../img/convert.png) 47.5% 25%/auto no-repeat, url(../img/trubka.png) 80% 25%/auto no-repeat,url(../img/foncontact.jpg);}
-
+   width: 100%;
+   height: 80%;
+   background: url(../img/foncontact.jpg);
+}
 .title__contacts {
-	color: #fff;}
- 
-.title__contacts h3{
-	font-size: 22px;
-	/*padding: 90px 50px 30px 830px;*/
-	padding: 3% 43%;
-	color: #3f495a;
-	text-transform: uppercase;
-	color: #fff;}
-
+   color: #fff;
+}
+.title__contacts h3 {
+   padding: 80px 0px 20px 0px;
+   font-size: 22px;
+   color: #fff;
+   text-align: center;
+   font-weight: 600;
+   background: url(../img/cherta.png) 50% 100% / auto 2.5% no-repeat;
+}
 .title__contacts p {
-	text-align: center;
-	/*padding: 25px 596px 0px 597px;*/
-	padding: 0% 20%;
-	font-size: 12px;}
-
-.title__contacts li {
-	font-size: 12;
-	float: left;
-	/*padding: 4% 10%;*/
-	margin: 4% 14.8%;
-	/*padding: 60px 250px;
-	padding-left: 320px;*/
-	}
+   text-align: center;
+   padding: 1% 20%;
+   font-size: 12px;
 }
 
-.titel__obratnaya_svyaz{
-	color: #fff;
-
+.list1 {
+   width: 800px; /*фиксируем ширину обертки*/
+   margin-left: 600px;
+   height: 100px; /*Задаем высоту обертки*/
+}
+.list1 li {
+   margin-top: 10px;
+   float: left; /*Задаем обтекание*/
+   line-height: 20px; /*Высота строки +  верт. центрирования текста*/
+   width: 60px; /*Фиксируем ширину блока*/
+   margin-right: 60px;
+   margin-left: 100px;
+   text-align: center; /*Центрируем текст по горизонтали*/
+}
+.list1 :last-child {
+   margin-right: 0px; /*Убираем поле последнего div-а*/
+}
+.address {
+   background: url(../img/geo.png) top no-repeat;
+}
+.address p {
+   padding: 25px 1px 1px 1px;
+   font-size: 12px;
+}
+.mail {
+   background: url(../img/convert.png) top no-repeat;
+}
+.mail p {
+   padding: 25px 1px 1px 1px;
+   font-size: 12px;
+}
+.phone {
+   background: url(../img/trubka.png) top no-repeat;
+}
+.phone p {
+   padding: 25px 1px 1px 1px;
+   font-size: 12px;
 }
 
-.titel__obratnaya_svyaz h4{
-	font-size: 22px;
-	/*padding: 120px 50px 30px 810px;*/
-	padding: 0% 42%;
-	color: #3f495a;
-	text-transform: uppercase;
-	color: #fff;}
+/* feedback*/
 
-.svyaaz1 {
-	padding: 30%;
+.feedback {
+   color: #fff;
+   text-align: center;
 }
-.titel__obratnaya_svyaz input{
-	float: left;
-	font-size: 20px;
-	margin: 0% 1%;
-	/*margin: 50px 300px 20px 300px;*/
+
+.titel__feedback h4 {
+   padding: 30px 0px 20px 0px;
+   font-size: 22px;
+   text-align: center;
+   font-weight: 600;
+   text-transform: uppercase;
 }
-.titel__obratnaya_svyaz textarea{
-	font-size: 20px;
-	margin: 1% 40%;
-	/*margin-left: 700px;*/
+
+.forma {
+   height: 220px;
+   margin: 0.5% 39.4%;
 }
-.titel__obratnaya_svyaz button {
-	color: #fff;
-	height: 22px;
-	text-align: center;
-	border: 2px solid ;
-	background: none;
-	border-radius: 5px;
-	font-size: 13px;
-	padding: 0px 16px;
-	margin: 10px 0px 82px 845px;}
+
+.titel__feedback1 input {
+   float: left;
+   border-radius: 3px;
+   padding: 3px;
+   font-size: 15px;
+   margin-right: 10px;
+   margin-bottom: 5px;
+}
+.titel__feedback1 input :last-child {
+   margin-right: 0px;
+}
+
+.titel__feedback1 button {
+   color: #fff;
+   height: 22px;
+   text-align: center;
+   border: 2px solid;
+   background: none;
+   border-radius: 5px;
+   font-size: 13px;
+   padding: 0px 16px;
+   margin: 0.7% 43%;
+}
