@@ -292,7 +292,7 @@ nav {
     font-weight: 600;
 }
 
-.cost ul {
+.list {
     font-size: 23px;
     padding: 10px 1px 10px 530px;
 }
@@ -305,6 +305,17 @@ nav {
     margin: 15px 1px 15px 1px;
     background-color: #caccd18f;
     font-size: 18px;
+}
+
+.result {
+    font-size: 23px;
+    margin: 5px 540px 10px 530px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-shadow: 0px -4px 0px 0px rgba(158, 161, 163, 1);
+    -moz-box-shadow: 0px -4px 0px 0px rgba(158, 161, 163, 1);
+    box-shadow: 0px -4px 0px 0px rgba(158, 161, 163, 1);
 }
 
 
