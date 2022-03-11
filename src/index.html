@@ -113,48 +113,65 @@
     <div class="cost">
         <a name="cost"></a>
         <h3>Расчет стоимости</h3>
-        <div class="list">
+        <div class="list"  id="calc">
             <ul>
                 <li>
                     <h4>ТИП САЙТА</h4>
-                    <select name="tip" id="1">
-                  <option value="variant1">Коммерческий</option>
-                  <option value="variant2">Информационный</option>
-                  <option value="variant3">Социальный</option>
-                  <option value="variant4">Трафиковый</option>
-                  <option value="variant4">Веб-сервис</option>
+                    <select class="type" name="type">
+                  <option value="0">Выбор варианта</option>
+                  <option value="10">Коммерческий</option>
+                  <option value="20">Информационный</option>
+                  <option value="30">Социальный</option>
+                  <option value="40">Трафиковый</option>
+                  <option value="50">Веб-сервис</option>
                </select>
                 </li>
                 <li>
                     <h4>ДИЗАЙН</h4>
-                    <select name="dezine" id="1">
-                  <option value="variant4">Классический</option>
-                  <option value="variant1">Минимализм</option>
-                  <option value="variant2">Рисованный</option>
-                  <option value="variant3">Метро (карточный)</option>
-                  <option value="variant4">Флэт (плоский)</option>
-                  <option value="variant4">Брутализм</option>
-                  <option value="variant4">Фестивальный (промо)</option>
-                  <option value="variant4">Гранж</option>
-                  <option value="variant4">Ретро</option>
-                  <option value="variant4">Organic & Natural</option>
+                    <select class="dezine" name="dezine">
+                  <option value="0">Выбор варианта</option>      
+                  <option value="10">Классический</option>
+                  <option value="20">Минимализм</option>
+                  <option value="30">Рисованный</option>
+                  <option value="40">Метро (карточный)</option>
+                  <option value="50">Флэт (плоский)</option>
+                  <option value="60">Брутализм</option>
+                  <option value="70">Фестивальный (промо)</option>
+                  <option value="80">Гранж</option>
+                  <option value="90">Ретро</option>
+                  <option value="100">Organic & Natural</option>
+                  <option value="110">Индивидуальный</option>
                </select>
                 </li>
                 <li>
                     <h4>АДАПТИВНОСТЬ</h4>
-                    <select name="adaptive" id="1">
-                  <option value="variant1">Фиксированный</option>
-                  <option value="variant2">Гибкий</option>
-                  <option value="variant3">Адаптивный</option>
+                    <select class="adaptive" name="adaptive">
+                  <option value="0">Выбор варианта</option>
+                  <option value="10">Фиксированный</option>
+                  <option value="20">Гибкий</option>
+                  <option value="30">Адаптивный</option>
                </select>
                 </li>
             </ul>
         </div>
+
         <div class="result">
-            <ul>
-                <li><b>Сроки</b></li>
-                <li><b>Стоимость</b></li>
-            </ul>
+            <div class="text">
+                <ul>
+                    <li><b>Сроки</b> </li>
+                    <li><b>Стоимость</b> </li>
+                </ul>
+            </div>
+            <div class="inrezult">
+                <ul>
+                    <div class="term">
+                        <li><b></b></li>
+                    </div>
+                    <div class="rezCost"></div>
+                    <li><b></b></li>
+                </ul>
+
+            </div>
         </div>
     </div>
 
@@ -254,6 +271,7 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71560.6058448378!2d37.94686682565551!3d55.91003712926884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ad3211c5d24af%3A0x9950ff773996bb04!2z0KnRkdC70LrQvtCy0L4sINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4!5e0!3m2!1sru!2sru!4v1645376605929!5m2!1sru!2sru"
         width="1920" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
+    <script src="/js/calc.js"></script>
 </body>
 
 </html>
