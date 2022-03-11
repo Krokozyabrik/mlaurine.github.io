@@ -12,16 +12,15 @@ adaptive.onchange = function() { console.log(this.value); };
 
 
 //подсчет стоимости
-let custSumm = 0;
+//let custSumm = 0;
 
 //вывод Стоимости
 let sumcost = document.querySelector(".rezCost");
-sumcost.innerText = custSumm;
+sumcost.innerText = 0;
 
-/*
+
 //подсчет времени
-let timeSumm = 0;
+//let timeSumm = 0;
 //вывод времени
 let sumtime = document.querySelector(".term");
-sumtime.innerText = timeSumm;
-*/
+sumtime.innerText = 0;
