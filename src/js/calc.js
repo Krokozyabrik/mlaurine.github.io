@@ -16,16 +16,20 @@ $(".type").on("change", function() {
     if (parseInt($(this).val()) > 0) {
         sum = sum + parseInt($(this).val()) + (days * 2000);
         days = days + (parseInt($(this).val()) / 200);
+
     } else {
         (parseInt($(this).val()) == 0)
         sum = 0;
         days = 0;
     }
 
+
+
     let sumCost = document.querySelector(".rezCost");
-    sumCost.innerText = sum;
+    sumCost.innerText = sum.toFixed(0);
+
     let sumTime = document.querySelector(".term");
-    sumTime.innerText = days;
+    sumTime.innerText = days.toFixed(0);
 });
 
 
@@ -41,9 +45,9 @@ $(".dezine").on("change", function() {
 
 
     let sumCost = document.querySelector(".rezCost");
-    sumCost.innerText = sum;
+    sumCost.innerText = sum.toFixed(0);
     let sumTime = document.querySelector(".term");
-    sumTime.innerText = days;
+    sumTime.innerText = days.toFixed(0);
 });
 
 $(".adaptive").on("change", function() {
@@ -59,7 +63,7 @@ $(".adaptive").on("change", function() {
 
 
     let sumCost = document.querySelector(".rezCost");
-    sumCost.innerText = sum;
+    sumCost.innerText = sum.toFixed(0);
     let sumTime = document.querySelector(".term");
-    sumTime.innerText = days;
+    sumTime.innerText = days.toFixed(0);
 });
