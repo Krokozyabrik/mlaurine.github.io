@@ -1,26 +1,30 @@
-//получение значения из селектов
-var type = document.querySelector('.type')
-type.onchange = function() { console.log(this.value); };
-
-var dezine = document.querySelector('.dezine')
-dezine.onchange = function() { console.log(this.value); };
-
-var adaptive = document.querySelector('.adaptive')
-adaptive.onchange = function() { console.log(this.value); };
+//сроки
+let sumTime = document.querySelector(".term");
+sumTime.innerText = 0;
 
 
+//стоимость
+let sumCost = document.querySelector(".rezCost");
+sumCost.innerText = 0;
 
 
-//подсчет стоимости
-//let custSumm = 0;
+$(".type").on("change", function() {
+    let sum = 0;
+    let days = 5;
+    sum = sum + parseInt($(this).val()) + (days * 2000);
+    days = days + parseInt($(this).val())
+    let sumCost = document.querySelector(".rezCost");
+    sumCost.innerText = sum;
 
-//вывод Стоимости
-let sumcost = document.querySelector(".rezCost");
-sumcost.innerText = 0;
+    let sumTime = document.querySelector(".term");
+    sumTime.innerText = days;
+});
 
 
-//подсчет времени
-//let timeSumm = 0;
-//вывод времени
-let sumtime = document.querySelector(".term");
-sumtime.innerText = 0;
+//сроки
+/*
+$(.type + " option:selected").attr("days");
+let days = 5;
+
+let sumTime = document.querySelector(".term");
+sumTime.innerText = 0;*/
