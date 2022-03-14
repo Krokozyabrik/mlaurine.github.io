@@ -24,8 +24,8 @@ $(".type").on("change", function() {
 
 
 $(".dezine").on("change", function() {
-    sum = sum + parseInt($(this).val()) + (days * 2000);
-    days = days + parseInt($(this).val())
+    sum = sum + parseInt($(this).val());
+    days = days + parseInt($(this).val());
 
 
     let sumCost = document.querySelector(".rezCost");
@@ -36,7 +36,7 @@ $(".dezine").on("change", function() {
 
 $(".adaptive").on("change", function() {
 
-    sum = sum + parseInt($(this).val()) + (days * 2000);
+    sum = sum + parseInt($(this).val());
     days = days + parseInt($(this).val())
 
 
