@@ -9,12 +9,12 @@ sumCost.innerText = 0;
 
 
 let sum = 0;
-let days = 0;
+let days = 5;
 
 
 $(".type").on("change", function() {
     if (parseInt($(this).val()) > 0) {
-        sum = sum + parseInt($(this).val());
+        sum = sum + parseInt($(this).val()) + (days * 2000);
         days = days + parseInt($(this).val())
     } else {
         (parseInt($(this).val()) == 0)
@@ -63,6 +63,3 @@ $(".adaptive").on("change", function() {
     let sumTime = document.querySelector(".term");
     sumTime.innerText = days;
 });
-
-sum = sum + (days * 2000);
-days = days + 5;
