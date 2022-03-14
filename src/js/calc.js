@@ -31,7 +31,7 @@ $(".type").on("change", function() {
 
 $(".dezine").on("change", function() {
     if (parseInt($(this).val()) > 0) {
-        sum = sum + parseInt($(this).val());
+        sum = sum + parseInt($(this).val()) + (days * 1000);
         days = days + parseInt($(this).val())
     } else {
         (parseInt($(this).val()) == 0)
@@ -49,7 +49,7 @@ $(".dezine").on("change", function() {
 $(".adaptive").on("change", function() {
 
     if (parseInt($(this).val()) > 0) {
-        sum = sum + parseInt($(this).val());
+        sum = sum + parseInt($(this).val()) + (days * 500);
         days = days + parseInt($(this).val())
     } else {
         (parseInt($(this).val()) == 0)
