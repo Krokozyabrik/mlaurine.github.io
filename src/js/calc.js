@@ -15,7 +15,7 @@ let days = 5;
 $(".type").on("change", function() {
     if (parseInt($(this).val()) > 0) {
         sum = sum + parseInt($(this).val()) + (days * 2000);
-        days = days + parseInt($(this).val())
+        days = days + (parseInt($(this).val()) / 200);
     } else {
         (parseInt($(this).val()) == 0)
         sum = 0;
@@ -32,7 +32,7 @@ $(".type").on("change", function() {
 $(".dezine").on("change", function() {
     if (parseInt($(this).val()) > 0) {
         sum = sum + parseInt($(this).val()) + (days * 1000);
-        days = days + parseInt($(this).val())
+        days = days + (parseInt($(this).val()) / 200)
     } else {
         (parseInt($(this).val()) == 0)
         sum = 0;
@@ -50,7 +50,7 @@ $(".adaptive").on("change", function() {
 
     if (parseInt($(this).val()) > 0) {
         sum = sum + parseInt($(this).val()) + (days * 500);
-        days = days + parseInt($(this).val())
+        days = days + (parseInt($(this).val()) / 200)
     } else {
         (parseInt($(this).val()) == 0)
         sum = 0;
