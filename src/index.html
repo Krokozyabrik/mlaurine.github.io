@@ -12,7 +12,7 @@
 <body>
     <header>
         <!-- все в одну строку шапка меню сайта остается на месте при прокрутке страницы -->
-        <nav>
+        <nav id="menu">
             <div class="logo">
                 <a style="color: azure;" href="#home"> Виталий Савин </a></div>
             <div class="menu">
@@ -27,8 +27,7 @@
             </div>
         </nav>
     </header>
-    <div class="main">
-        <a name="home"></a>
+    <div class="main" id="home">
         <div class="title__container">
             <h1>Привет <br> я Виталий Савин</h1>
             <h4>Фулл стек вэб-разработчик</h4>
@@ -38,8 +37,7 @@
     </div>
 
     <div class="AboutMe">
-        <div class="titel__AboutMe">
-            <a name="AboutMe"></a>
+        <div class="titel__AboutMe" id="AboutMe">
             <div class="titel">
                 <h3>ОБО МНЕ</h3>
             </div>
@@ -50,8 +48,7 @@
         </div>
     </div>
 
-    <div class="WhatICanDo">
-        <a name="WhatICanDo"></a>
+    <div class="WhatICanDo" id="WhatICanDo">
         <div class="titel">
             <h3>ЧТО Я УМЕЮ</h3>
         </div>
@@ -85,9 +82,7 @@
         </div>
     </div>
 
-    <div class="cases">
-        <a name="cases"></a>
-
+    <div class="cases" id="cases">
         <div class="titel__cases">
             <div class="titel">
                 <h3>КЕЙСЫ</h3>
@@ -110,8 +105,7 @@
         </div>
     </div>
 
-    <div class="cost">
-        <a name="cost"></a>
+    <div class="cost" id="cost">
         <h3>Расчет стоимости</h3>
         <div class="list"  id="calc">
             <ul>
@@ -211,8 +205,7 @@
     </div>
 
     <div class="reviews">
-        <div class="titel__reviews">
-            <a name="reviews"></a>
+        <div class="titel__reviews" id="reviews">
             <div class="titel">
                 <h3>ОТЗЫВЫ</h3>
             </div>
@@ -225,8 +218,7 @@
     <footer>
         <!-- нижнее меню сайта  -->
         <div class="title__contacts">
-            <div>
-                <a name="contacts"></a>
+            <div id="contacts">
                 <h3>МОИ КОНТАКТЫ</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <div class="list1">
@@ -268,10 +260,26 @@
         </form>
     </footer>
 
+
+
+
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71560.6058448378!2d37.94686682565551!3d55.91003712926884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ad3211c5d24af%3A0x9950ff773996bb04!2z0KnRkdC70LrQvtCy0L4sINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4!5e0!3m2!1sru!2sru!4v1645376605929!5m2!1sru!2sru"
         width="1920" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
     <script type="text/javascript" src="js/jquery.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#menu").on("click", "a", function(event) {
+                event.preventDefault();
+                var id = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({
+                    scrollTop: top
+                }, 1000);
+            });
+        });
+    </script>
 
     <script src="js/calc.js"></script>
 </body>
