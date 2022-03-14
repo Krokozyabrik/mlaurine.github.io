@@ -9,12 +9,18 @@ sumCost.innerText = 0;
 
 
 let sum = 0;
-let days = 5;
+let days = 0;
 
 
 $(".type").on("change", function() {
-    sum = sum + parseInt($(this).val()) + (days * 2000);
-    days = days + parseInt($(this).val())
+    if (parseInt($(this).val()) > 0) {
+        sum = sum + parseInt($(this).val());
+        days = days + parseInt($(this).val())
+    } else {
+        (parseInt($(this).val()) == 0)
+        sum = 0;
+        days = 0;
+    }
 
     let sumCost = document.querySelector(".rezCost");
     sumCost.innerText = sum;
@@ -24,8 +30,14 @@ $(".type").on("change", function() {
 
 
 $(".dezine").on("change", function() {
-    sum = sum + parseInt($(this).val());
-    days = days + parseInt($(this).val());
+    if (parseInt($(this).val()) > 0) {
+        sum = sum + parseInt($(this).val());
+        days = days + parseInt($(this).val())
+    } else {
+        (parseInt($(this).val()) == 0)
+        sum = 0;
+        days = 0;
+    }
 
 
     let sumCost = document.querySelector(".rezCost");
@@ -36,8 +48,14 @@ $(".dezine").on("change", function() {
 
 $(".adaptive").on("change", function() {
 
-    sum = sum + parseInt($(this).val());
-    days = days + parseInt($(this).val())
+    if (parseInt($(this).val()) > 0) {
+        sum = sum + parseInt($(this).val());
+        days = days + parseInt($(this).val())
+    } else {
+        (parseInt($(this).val()) == 0)
+        sum = 0;
+        days = 0;
+    }
 
 
     let sumCost = document.querySelector(".rezCost");
@@ -45,3 +63,6 @@ $(".adaptive").on("change", function() {
     let sumTime = document.querySelector(".term");
     sumTime.innerText = days;
 });
+
+sum = sum + (days * 2000);
+days = days + 5;
