@@ -3,7 +3,7 @@ let sumTime = document.querySelector(".term");
 sumTime.innerText = 0;
 
 //стоимость
-let sumCost = document.querySelector(".rezCost");
+let sumCost = document.querySelector(".rez-cost");
 sumCost.innerText = 0;
 
 let sum = 0;
