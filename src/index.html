@@ -112,7 +112,7 @@
                 <li>
                     <h4>ТИП САЙТА</h4>
                     <select class="type" name="type">
-                        <option value="0">Выбор варианта</option>
+                        <option selected value="0">Выбор варианта</option>
                         <option value="1250">Коммерческий</option>
                         <option value="2040">Информационный</option>
                         <option value="3500">Социальный</option>
@@ -123,7 +123,7 @@
                 <li>
                     <h4>ДИЗАЙН</h4>
                     <select class="dezine" name="dezine">
-                        <option value="0">Выбор варианта</option>      
+                        <option selected value="0">Выбор варианта</option>      
                         <option value="1258">Классический</option>
                         <option value="2087">Минимализм</option>
                         <option value="3074">Рисованный</option>
@@ -140,7 +140,7 @@
                 <li>
                     <h4>АДАПТИВНОСТЬ</h4>
                     <select class="adaptive" name="adaptive">
-                        <option value="0">Выбор варианта</option>
+                        <option selected value="0">Выбор варианта</option>
                         <option value="1059">Фиксированный</option>
                         <option value="2084">Гибкий</option>
                         <option value="3058">Адаптивный</option>
@@ -161,8 +161,9 @@
                     <div class="term">
                         <li><b></b></li>
                     </div>
-                    <div class="rezCost" id="rezCost"></div>
-                    <li><b></b></li>
+                    <div class="rezCost" id="rezCost">
+                        <li><b></b></li>
+                    </div>
                 </ul>
 
             </div>
@@ -209,9 +210,24 @@
             <div class="titel">
                 <h3>ОТЗЫВЫ</h3>
             </div>
-            <img src="img/otziv.jpg" width="120" alt="Тут будет фото клиента">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="rewiev">
+                <div class="review1">
+                    <img src="img/otziv.jpg" width="120" alt="Тут будет фото клиента">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="review2">
+                    <img src="img/otziv1.jpg" width="120" alt="Тут будет фото клиента">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                </div>
+                <div class="review3">
+                    <img src="img/otziv2.jpg" width="120" alt="Тут будет фото клиента">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -260,6 +276,17 @@
         </form>
     </footer>
 
+    <div class="overlay">
+        <div class="block-popup">
+            <h3>Оставьте свой Email</h3>
+            <form>
+                <input type="email" placeholder="Введите email" name="email-popup" />
+                <input type="button" name="btn-form-popup" value="Отправить" />
+            </form>
+            <span>&times;</span>
+        </div>
+    </div>
+
 
 
 
@@ -267,6 +294,17 @@
         width="1920" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
     <script type="text/javascript" src="js/jquery.js"></script>
+
+    <script type="text/javascript">
+        $('.block-popup span').click(function() {
+            $('.block-popup, .overlay').fadeOut();
+        })
+        $(window).mouseleave(function(e) {
+            if (e.clientY < 0) {
+                $('.overlay, .block-popup').fadeIn();
+            }
+        })
+    </script>
 
     <script type="text/javascript">
         $(document).ready(function() {
