@@ -21,12 +21,15 @@ $(".type").on("change", function() {
         days = 5 + (parseInt($(this).val()) / 200);
     } else {
         (parseInt($(this).val()) == 0)
+
+
         sum = 0;
         days = 0;
         sum1 = 0;
         days1 = 0;
         sum2 = 0;
         days2 = 0;
+
     }
 
 
